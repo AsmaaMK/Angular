@@ -1,6 +1,6 @@
 <div class="img-wrapper">
     <div class="front">
-        <a href="product-page(no-sidebar).html"><img src="../../assets/images/marketplace/1.jpg"
+        <a routerLink = "/product-details/{{Prod.productID}}"><img [src]="Prod.img"
                 class="img-fluid blur-up lazyload bg-img" alt=""></a>
     </div>
     <div class="cart-info cart-wrap">
@@ -17,7 +17,7 @@
     <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
             class="fa fa-star"></i> <i class="fa fa-star"></i></div>
     <a href="product-page(no-sidebar).html">
-        <h6>Slim Fit Cotton Shirt</h6>
+        <h6>{{Prod.productName}}</h6>
     </a>
-    <h4>$500</h4>
+    <h4>${{Prod.price}}</h4>
 </div>

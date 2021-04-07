@@ -6,6 +6,7 @@ declare var $:any;
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css']
 })
+
 export class HomePageComponent implements OnInit {
 
   constructor() { }
@@ -24,24 +25,25 @@ export class HomePageComponent implements OnInit {
   }
 
   products: Array<ITodaysDealProducts> = [
-    { productName: 'cat 1', price: 2000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 2', price: 1000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 3', price: 2000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 4', price: 400, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 5', price: 2000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 6', price: 3000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 7', price: 100, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 1', price: 2000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 2', price: 1000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 3', price: 2000, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 4', price: 400, img: 'http://placekitten.com/210/268' },
-    { productName: 'cat 5', price: 2000, img: 'http://placekitten.com/210/268' }
+    { productID: 1, productName: 'cat 1', price: 2000, img: 'http://placekitten.com/210/268' },
+    { productID: 2, productName: 'cat 2', price: 1000, img: 'http://placekitten.com/210/268' },
+    { productID: 3, productName: 'cat 3', price: 2000, img: 'http://placekitten.com/210/268' },
+    { productID: 4, productName: 'cat 4', price: 400, img: 'http://placekitten.com/210/268' },
+    { productID: 5, productName: 'cat 5', price: 2000, img: 'http://placekitten.com/210/268' },
+    { productID: 6, productName: 'cat 6', price: 3000, img: 'http://placekitten.com/210/268' },
+    { productID: 7, productName: 'cat 7', price: 100, img: 'http://placekitten.com/210/268' },
+    { productID: 8, productName: 'cat 1', price: 2000, img: 'http://placekitten.com/210/268' },
+    { productID: 9, productName: 'cat 2', price: 1000, img: 'http://placekitten.com/210/268' },
+    { productID: 10, productName: 'cat 3', price: 2000, img: 'http://placekitten.com/210/268' },
+    { productID: 11, productName: 'cat 4', price: 400, img: 'http://placekitten.com/210/268' },
+    { productID: 12, productName: 'cat 5', price: 2000, img: 'http://placekitten.com/210/268' }
   ]
 
 }
 
 
 interface ITodaysDealProducts {
+  productID: Number;
   productName: String;
   price: Number;
   img: String;
