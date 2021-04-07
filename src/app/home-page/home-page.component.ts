@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ITodaysDealProducts } from '../shared/general-objects';
 declare var $:any;
 
 @Component({
@@ -39,12 +40,4 @@ export class HomePageComponent implements OnInit {
     { productID: 12, productName: 'cat 5', price: 2000, img: 'http://placekitten.com/210/268' }
   ]
 
-}
-
-
-interface ITodaysDealProducts {
-  productID: Number;
-  productName: String;
-  price: Number;
-  img: String;
 }

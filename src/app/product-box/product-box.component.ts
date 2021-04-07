@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ITodaysDealProducts } from '../shared/general-objects'
 declare var $: any;
 
 @Component({
@@ -22,13 +23,6 @@ export class ProductBoxComponent implements OnInit {
     });
   }
 
-  @Input()
-    Prod!: ITodaysDealProducts;
+  @Input() Prod!: ITodaysDealProducts;
 
-}
-interface ITodaysDealProducts {
-  productID: Number;
-  productName: String;
-  price: Number;
-  img: String;
 }
