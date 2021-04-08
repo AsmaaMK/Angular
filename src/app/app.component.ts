@@ -27,6 +27,6 @@ export class AppComponent {
     });
 
     // to access the message service
-    this.message.success('hello');
+    this.message.error('Not found');
   }
 }

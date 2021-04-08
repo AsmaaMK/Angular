@@ -1,16 +1,16 @@
 import { Injectable } from "@angular/core";
-
+declare var toastr:any;
 @Injectable() 
 export class MessageService {
     success(message: String) {
-        alert(message);
+        toastr.success(message, 'Success');
     }
 
     error(message: String) {
-        alert(message);
+        toastr.error(message, 'Error');
     }
 
     warning(message: String) {
-        alert(message);
+        toastr.warning(message, 'Warning');
     }
 }
