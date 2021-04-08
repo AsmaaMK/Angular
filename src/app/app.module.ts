@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProductDetailsPageComponent } from './product-details-page/product-details-page.component';
+import { MessageService } from './shared/message-service'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { ProductDetailsPageComponent } from './product-details-page/product-deta
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

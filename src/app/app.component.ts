@@ -1,4 +1,6 @@
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { Component } from '@angular/core';
+import { MessageService } from './shared/message-service'
 declare var $: any;
 
 @Component({
@@ -9,6 +11,8 @@ declare var $: any;
 
 export class AppComponent {
   title = 'MarketPlace';
+
+  constructor(private message:MessageService) {}
 
   ngOnInit(): void {
     $(document).ready(function()
@@ -21,6 +25,8 @@ export class AppComponent {
       script.defer = true;
       body.appendChild(script);
     });
-  }
 
+    // to access the message service
+    this.message.success('hello');
+  }
 }
